@@ -214,8 +214,8 @@ details ul { margin: .3em 0; }
 .tel { white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 /* Treppenmodell */
-.stairs { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin: 18px 0; align-items: start; }
-.stair { border-radius: var(--radius); padding: 12px; font-size: 14px; border: 1px solid rgba(0,0,0,.12); color: #1a1a1a; }
+.stairs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 18px 0; align-items: start; }
+.stair { border-radius: var(--radius); padding: 14px; font-size: 14.5px; border: 1px solid rgba(0,0,0,.12); color: #1a1a1a; min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
 .stair b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
 .stair .who { font-weight: 700; margin: 4px 0; }
 .stair small { display: block; margin-top: 6px; font-size: 13px; }
@@ -223,8 +223,8 @@ details ul { margin: .3em 0; }
 .stair:nth-child(1) { background: #79c283; } .stair:nth-child(2) { background: #b9dd7c; } .stair:nth-child(3) { background: #ffef6b; }
 .stair:nth-child(4) { background: #f4c352; } .stair:nth-child(5) { background: #f2836f; } .stair:nth-child(6) { background: #d3564a; color: #fff; }
 .stair:nth-child(6) small, .stair:nth-child(6) b { color: #fff; }
-@media (max-width: 1100px) { .stairs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .stairs { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .stairs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .stairs { grid-template-columns: 1fr; } }
 
 /* Rechner */
 .calc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; margin: 18px 0; box-shadow: var(--shadow); }
@@ -256,7 +256,7 @@ details ul { margin: .3em 0; }
 
 /* Leitstern */
 .star-wrap { display: flex; justify-content: center; margin: 10px 0 0; }
-.star { width: min(440px, 100%); height: auto; color: var(--accent); }
+.star { width: min(560px, 100%); height: auto; color: var(--accent); overflow: visible; }
 
 /* Video */
 .video { margin: 18px 0; }
