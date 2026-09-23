@@ -258,6 +258,10 @@ details ul { margin: .3em 0; }
 .star-wrap { display: flex; justify-content: center; margin: 10px 0 0; }
 .star { width: min(560px, 100%); height: auto; color: var(--accent); overflow: visible; }
 
+/* Organigramm */
+.org-wrap { display: flex; justify-content: center; margin: 14px 0 0; }
+.org-chart { width: min(760px, 100%); height: auto; color: var(--accent); overflow: visible; }
+
 /* Video */
 .video { margin: 18px 0; }
 .video video { width: 100%; border-radius: var(--radius); background: #000; aspect-ratio: 16/9; }
